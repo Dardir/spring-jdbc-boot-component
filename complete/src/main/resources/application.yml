@@ -1,0 +1,24 @@
+database:
+  url: jdbc:mysql://localhost:3300/maintenance
+  username: root
+  password: root
+
+app:
+  name: springboot-jwt-demo
+
+jwt:
+  header: Authorization
+  expires_in: 18000 # 5 minutes
+  mobile_expires_in: 600 # 10 minutes
+  secret: queenvictoria
+
+spring:
+  hibernate:
+      # possible values: validate | update | create | create-drop
+      ddl-auto: validate
+      generate-ddl: none
+  datasource:
+    url: jdbc:mysql://localhost:3300/maintenance
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
